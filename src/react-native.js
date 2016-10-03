@@ -30,7 +30,7 @@ const ReactNative = {
   SegmentedControlIOS: createMockComponent('SegmentedControlIOS'),
   SliderIOS: createMockComponent('SliderIOS'),
   SnapshotViewIOS: createMockComponent('SnapshotViewIOS'),
-  Switch: createMockComponent('Switch'),
+  Switch: createMockComponent('./components/Switch'),
   PullToRefreshViewAndroid: createMockComponent('PullToRefreshViewAndroid'),
   RecyclerViewBackedScrollView: createMockComponent('RecyclerViewBackedScrollView'),
   RefreshControl: createMockComponent('RefreshControl'),

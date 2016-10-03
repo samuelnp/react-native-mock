@@ -8,7 +8,7 @@ import NativeMethodsMixin from '../mixins/NativeMethodsMixin';
 import View from './View';
 const stylePropType = styleSheetPropType(TextStylePropTypes);
 
-const Text = React.createClass({
+const Switch = React.createClass({
   propTypes: {
     ...View.propTypes,
     tintColor: React.PropTypes.string,
@@ -28,4 +28,4 @@ const Text = React.createClass({
   },
 });
 
-module.exports = Text;
+module.exports = Switch;

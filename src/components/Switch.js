@@ -28,4 +28,4 @@ const Text = React.createClass({
   },
 });
 
-module.exports = Text;
+module.exports = Switch;

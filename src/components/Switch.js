@@ -1,25 +1,24 @@
-/**
- * https://github.com/facebook/react-native/blob/master/Libraries/Text/Text.js
- */
 import React from 'react';
 import styleSheetPropType from '../propTypes/StyleSheetPropType';
-import TextStylePropTypes from '../propTypes/TextStylePropTypes';
+import ViewStylePropTypes from '../propTypes/ViewStylePropTypes';
 import NativeMethodsMixin from '../mixins/NativeMethodsMixin';
 import View from './View';
-const stylePropType = styleSheetPropType(TextStylePropTypes);
+const stylePropType = styleSheetPropType(ViewStylePropTypes);
+
+const { PropTypes } = React;
 
 const Switch = React.createClass({
   propTypes: {
     ...View.propTypes,
-    tintColor: React.PropTypes.string,
-    thumbTintColor: React.PropTypes.string,
-    onTintColor: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    onValueChange: React.PropTypes.func,
-    suppressHighlighting: React.PropTypes.bool,
+    tintColor: PropTypes.string,
+    thumbTintColor: PropTypes.string,
+    onTintColor: PropTypes.string,
+    disabled: PropTypes.bool,
+    onValueChange: PropTypes.func,
+    suppressHighlighting: PropTypes.bool,
     style: stylePropType,
-    testID: React.PropTypes.string,
-    value: React.PropTypes.bool,
+    testID: PropTypes.string,
+    value: PropTypes.bool,
   },
   mixins: [NativeMethodsMixin],
 
